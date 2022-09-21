@@ -1,1 +1,1 @@
-const url = "https://mcteam6.shop"
+const url = "https://www.mcteam6.shop"

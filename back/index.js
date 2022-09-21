@@ -9,7 +9,7 @@ const {userRouter} = require('./src/router/userRouter')
 /* express 미들웨어설정 */
 
 // 정적파일제공
-app.user(express.static('../front'))
+app.use(express.static('./front'));
 
 //cors 설정
 app.use(cors());
