@@ -1,0 +1,29 @@
+.jumbotron-item-main {
+    height: 20rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.jumbotron-item-main-msg {
+    width: 60%;
+    text-align: center;
+
+}
+.jumbotron-item-main-msg p {
+    font-size: 1.6rem;
+}
+.jumbotron-item-main-msg h1{
+    font-size: 2.5rem;
+}
+.jumbotron-item-main-img {
+    width: 40%;
+    height: 50%;
+    background-color: antiquewhite;
+    background: url('../img/img-bg.jpg') no-repeat center / contain;
+}
+.jumbotron-item-sub {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.6rem;
+}
+

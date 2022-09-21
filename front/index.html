@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>m y t a s k s</title>
+    <!-- 메타태그설정 -->
+    <meta name="author" content="kbh0224">
+    <meta name="keyword" content="task, todo-list, 일정관리">
+    <meta name="description" content="원데이 일정관리">
+    <!-- 구글폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">
+    <!-- 파비콘 -->
+    <link rel="icon" href="img/favicon.ico">
+    <!-- 아이폰 파비콘 -->
+    <link rel="apple-touch-icon" href="img/favicon.ico">
+    <!-- font-awesome-icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS     -->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/jumbotron.css">
+    <link rel="stylesheet" href="css/matrix.css">
+</head>
+<body>
+    <!-- 헤더 -->
+    <header>
+        <div class="inner">
+            <div class="header-container">
+                <div class="title">
+                    <a href="#">m y t a s k s</a>
+                </div>
+                <div class="sign-container">
+                    <div class="unsigned">
+                        <div class="sign-in"><a href="signin.html">로그인</a></div>
+                        <div class="sign-up"><a href="signup.html">회원가입</a></div>
+                    </div>
+                    <div class="signed">
+                        <div class="dropdown">
+                            <div class="dropdown-btn">Hello! <span id="nickname">user</span>
+                                <i class="fa-solid fa-caret-down"></i>
+                            </div>
+                            <div class="dropdown-content">
+                                <button id="sign-out">로그아웃</button>
+                            </div>
+                        </div>
+    
+    
+                    </div>
+                </div>
+            </div>
+            <!-- header-container -->
+        </div>
+    </header>
+    <!-- 메인매트릭스 -->
+    <main>
+        <div class="inner">
+            <div class="jumbotron-container">
+                <div class="jumbotron-item-main">
+                    <div class="jumbotron-item-main-msg">
+                        <p>managing priority</p>
+                        <h1>m y t a s k s</h1>
+                    </div>
+                    <div class="jumbotron-item-main-img">
+    
+                    </div>
+                </div>
+                <div class="jumbotron-item-sub">
+                    <p>오늘의 우선순위를 확인해 보세요</p>
+                </div>
+            </div>
+    
+            <div class="matrix-container">
+                <div class="matrix-item" id="decide">
+                    <div class="matrix-item-header">
+                        <div class="matrix-title">계획을 세워 해야할 일</div>
+                        <input type="text" class="matrix-input" placeholder="입력 후 엔터">
+                    </div>
+                    <ul class="matrix-item-list">
+                        <!-- <li class="list-item">
+                            <div class="done-text-container">
+                                <input type="checkbox" class="todo-done">
+                                <p class="todo-text">산책가기,친구랑점심먹기,주민센터가기,예약도서찾으러가기</p>
+                            </div>
+                            <div class="update-delete-container">
+                                <i class="todo-update fa-solid fa-pencil"></i>
+                                <i class="todo-delete fa-solid fa-trash"></i>
+                            </div>
+                        </li>
+                        <li class="list-item">
+                            <div class="done-text-container">
+                                <input type="checkbox" class="todo-done">
+                                <p class="todo-text">산책가기</p>
+                            </div>
+                            <div class="update-delete-container">
+                                <i class="todo-update fa-solid fa-pencil"></i>
+                                <i class="todo-delete fa-solid fa-trash"></i>
+                            </div>
+                        </li> -->
+
+                    </ul>
+                </div>
+    
+                <div class="matrix-item" id="do">
+                    <div class="matrix-item-header">
+                        <div class="matrix-title">오늘 해야할 일</div>
+                        <input type="text" class="matrix-input" placeholder="입력 후 엔터">
+                    </div>
+                    <ul class="matrix-item-list">
+                        
+                    </ul>
+    
+                </div>
+    
+                <div class="matrix-item" id="delegate">
+                    <div class="matrix-item-header">
+                        <div class="matrix-title">급하지만 중요도는 낮은 일</div>
+                        <input type="text" class="matrix-input" placeholder="입력 후 엔터">
+                    </div>
+                    <ul class="matrix-item-list">
+                        
+                    </ul>
+    
+                </div>
+    
+                <div class="matrix-item" id="delete">
+                    <div class="matrix-item-header">
+                        <div class="matrix-title">최후순위</div>
+                        <input type="text" class="matrix-input" placeholder="입력 후 엔터">
+                    </div>
+                    <ul class="matrix-item-list">
+                        
+                    </ul>
+    
+                </div>
+                <span class="importance">중요도</span>
+                <span class="urgency">긴급성</span>
+            </div>
+        </div>
+    </main>
+    <!-- 푸터 -->
+    <footer>
+        <div class="inner">
+            <div class="footer-container">
+                <div class="author">Created by...kbh224</div>
+                <div class="autho-email">ericakim224@gmail.com</div>
+            </div>
+        </div>
+    </footer>
+    <!-- axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"
+        integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+    <!-- 자바스크립트 -->
+    <script src="./js/common.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/todo.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>m y t a s k s</title>
+    <!-- 메타태그설정 -->
+    <meta name="author" content="kbh0224">
+    <meta name="keyword" content="task, todo-list, 일정관리">
+    <meta name="description" content="원데이 일정관리">
+    <!-- 구글폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">
+    <!-- 파비콘 -->
+    <link rel="icon" href="img/favicon.ico">
+    <!-- 아이폰 파비콘 -->
+    <link rel="apple-touch-icon" href="img/favicon.ico">
+    <!-- font-awesome-icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS     -->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+    <header>
+        <div class="inner">
+            <div class="header-container">
+                <div class="title">
+                    <a href="index.html">m y t a s k s</a>
+                </div>
+                <div class="sign-container">
+                    <div class="unsigned">
+                        <div class="sign-in"><a href="signin.html">로그인</a></div>
+                        <!-- <div class="sign-up"><a href="#">회원가입</a></div> -->
+                    </div>
+                    <div class="signed hidden">
+                        <div class="dropdown">
+                            <div class="dropdown-btn">Hello! <span id="username">user</span>
+                            <i class="fa-solid fa-caret-down"></i>
+                            </div>                    
+                            <div class="dropdown-content">
+                                <button id="sign-out">로그아웃</button>
+                            </div>
+                        </div>
+                        
+
+                    </div>
+                </div>
+            </div>
+            <!-- header-container -->
+        </div>
+    </header>
+    
+    <main>
+        <div class="signup-container">
+            <h1 class="blue">s i g n u p</h1>
+            <div class="signup-form">
+                <input type="text" placeholder="email" id="email">
+                <div class="email-message message">이메일형식으로 입력</div>
+                <input type="password" placeholder="password" id="password">
+                <div class="password-message message">영문&숫자 8~20자</div>
+                <input type="password" placeholder="password" id="password-confirm">
+                <div class="password-confirm-message message">비밀번호가 일치하지 않습니다</div>
+                <input type="text" placeholder="name" id="nickname">
+                <div class="nickname-message message">한글/영어 2-10자 이내</div>
+                <input type="button" value="sign up" id="signup">
+            </div>
+        </div>
+    </main>   
+
+    <footer>
+        <div class="inner">
+            <div class="footer-container">
+                <div class="author">Created by...kbh224</div>
+                <div class="autho-email">ericakim224@gmail.com</div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"
+        integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+    <script src="./js/common.js"></script>
+    <script src="./js/signup.js"></script>
+</body>
+</html>
